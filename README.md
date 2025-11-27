@@ -77,32 +77,6 @@ O sistema está configurado para se comunicar com a API em:
 - **Base URL**: http://localhost:3030
 - **Endpoints**: Conforme documentação da API ElectroVision
 
-## Funcionalidades Implementadas
-
-### Requisitos Atendidos
-
-**5. Interface Principal:**
-- 5.1.1 - Exibe nome do usuário logado
-- 5.1.2 - Logout com redirecionamento
-- 5.1.3 - Acesso ao cadastro de produtos
-- 5.1.4 - Acesso à gestão de estoque
-- 5.1.5 - Design responsivo
-
-**6. Cadastro de Produtos:**
-- 6.1.1 - Listagem automática em tabela
-- 6.1.2 - Campo de busca funcional
-- 6.1.3 - Inserção de novos produtos
-- 6.1.4 - Edição de produtos existentes
-- 6.1.5 - Exclusão de produtos
-- 6.1.6 - Validações completas
-- 6.1.7 - Retorno à interface principal
-
-**7. Gestão de Estoque:**
-- 7.1.1 - Listagem ordenada (Bubble Sort)
-- 7.1.2 - Seleção e tipo de movimentação
-- 7.1.3 - Inserção de data
-- 7.1.4 - Alertas de estoque baixo
-
 ## Características Especiais
 
 ### Design
