@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0a1f0f 0%, #1a3d2e 50%, #0f2818 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 50%, #000000 100%);
   min-height: 100vh;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, #0d2818 0%, #1a4d2e 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 100%);
   border-bottom: 3px solid #2ecc71;
   box-shadow: 0 4px 20px rgba(46, 204, 113, 0.3);
   color: #2ecc71;
@@ -107,7 +107,7 @@ body {
 }
 
 .card {
-  background: linear-gradient(135deg, #0f2818 0%, #1a3d2e 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 100%);
   border: 2px solid #2ecc71;
   border-radius: 12px;
   padding: 1.5rem;
@@ -135,7 +135,7 @@ body {
   border: 2px solid #2ecc71;
   border-radius: 8px;
   font-size: 1rem;
-  background: rgba(15, 40, 24, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   color: #ecf0f1;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 .table th {
-  background: linear-gradient(135deg, #0d2818 0%, #1a4d2e 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 100%);
   font-weight: bold;
   color: #2ecc71;
   text-transform: uppercase;
@@ -184,7 +184,7 @@ body {
   border: 2px solid #2ecc71;
   border-radius: 8px;
   font-size: 1rem;
-  background: rgba(15, 40, 24, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   color: #ecf0f1;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .modal-content {
-  background: linear-gradient(135deg, #0f2818 0%, #1a3d2e 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 100%);
   border: 3px solid #2ecc71;
   padding: 2rem;
   border-radius: 12px;
@@ -279,7 +279,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0a1f0f 0%, #1a4d2e 50%, #0f2818 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 50%, #000000 100%);
   position: relative;
   overflow: hidden;
 }
@@ -299,7 +299,7 @@ body {
 }
 
 .login-card {
-  background: linear-gradient(135deg, #0f2818 0%, #1a3d2e 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 100%);
   border: 3px solid #2ecc71;
   padding: 2.5rem;
   border-radius: 16px;
@@ -326,7 +326,7 @@ body {
 }
 
 .dashboard-card {
-  background: linear-gradient(135deg, #0f2818 0%, #1a3d2e 100%);
+  background: linear-gradient(135deg, #000000 0%, #0a1f0f 100%);
   border: 2px solid #2ecc71;
   padding: 2rem;
   border-radius: 12px;
@@ -376,4 +376,175 @@ body {
     width: 95%;
     padding: 1rem;
   }
+}
+
+
+/* Botão de alternância de tema */
+.btn-tema-header {
+  background: transparent;
+  border: 2px solid #2ecc71;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-tema-header:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(46, 204, 113, 0.5);
+}
+
+/* Tema Vermelho */
+body.vermelho {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 50%, #000000 100%);
+}
+
+body.vermelho .header {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+  border-bottom: 3px solid #ff3333;
+  box-shadow: 0 4px 20px rgba(255, 51, 51, 0.4);
+  color: #ff3333;
+}
+
+body.vermelho .header h1 {
+  color: #ff3333;
+  text-shadow: 0 0 20px rgba(255, 51, 51, 0.8);
+}
+
+body.vermelho .btn-tema-header {
+  border-color: #ff3333;
+}
+
+body.vermelho .btn-tema-header:hover {
+  box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+}
+
+body.vermelho .btn-primary {
+  background: linear-gradient(135deg, #b30000 0%, #ff3333 100%);
+  box-shadow: 0 4px 15px rgba(255, 51, 51, 0.5);
+}
+
+body.vermelho .btn-primary:hover {
+  background: linear-gradient(135deg, #990000 0%, #cc0000 100%);
+  box-shadow: 0 6px 20px rgba(255, 51, 51, 0.7);
+}
+
+body.vermelho .btn-success {
+  background: linear-gradient(135deg, #cc4400 0%, #ff6633 100%);
+  box-shadow: 0 4px 15px rgba(255, 102, 51, 0.5);
+}
+
+body.vermelho .btn-success:hover {
+  background: linear-gradient(135deg, #b33c00 0%, #e65c2e 100%);
+  box-shadow: 0 6px 20px rgba(255, 102, 51, 0.7);
+}
+
+body.vermelho .btn-secondary {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  color: #ff3333;
+  border: 2px solid #ff3333;
+  box-shadow: 0 4px 15px rgba(255, 51, 51, 0.3);
+}
+
+body.vermelho .btn-secondary:hover {
+  box-shadow: 0 6px 20px rgba(255, 51, 51, 0.5);
+}
+
+body.vermelho .card {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+  border: 2px solid #ff3333;
+  box-shadow: 0 8px 32px rgba(255, 51, 51, 0.3);
+}
+
+body.vermelho .form-group label {
+  color: #ff3333;
+}
+
+body.vermelho .form-group input,
+body.vermelho .form-group select,
+body.vermelho .form-group textarea {
+  border: 2px solid #ff3333;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+body.vermelho .form-group input:focus,
+body.vermelho .form-group select:focus,
+body.vermelho .form-group textarea:focus {
+  border-color: #ff6666;
+  box-shadow: 0 0 15px rgba(255, 51, 51, 0.6);
+}
+
+body.vermelho .table th,
+body.vermelho .table td {
+  border-bottom: 1px solid rgba(255, 51, 51, 0.2);
+}
+
+body.vermelho .table th {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+  color: #ff3333;
+}
+
+body.vermelho .table tr:hover {
+  background: rgba(255, 51, 51, 0.1);
+}
+
+body.vermelho .search-box input {
+  border: 2px solid #ff3333;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+body.vermelho .modal-content {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+  border: 3px solid #ff3333;
+  box-shadow: 0 20px 60px rgba(255, 51, 51, 0.5);
+}
+
+body.vermelho .modal-header h3 {
+  color: #ff3333;
+  text-shadow: 0 0 10px rgba(255, 51, 51, 0.6);
+}
+
+body.vermelho .close-btn {
+  color: #ff3333;
+}
+
+body.vermelho .close-btn:hover {
+  color: #ff6666;
+  text-shadow: 0 0 10px rgba(255, 51, 51, 0.8);
+}
+
+body.vermelho .login-container {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 50%, #000000 100%);
+}
+
+body.vermelho .login-container::before {
+  background: radial-gradient(circle, rgba(255, 51, 51, 0.15) 0%, transparent 70%);
+}
+
+body.vermelho .login-card {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+  border: 3px solid #ff3333;
+  box-shadow: 0 20px 60px rgba(255, 51, 51, 0.5);
+}
+
+body.vermelho .login-card h2 {
+  color: #ff3333;
+  text-shadow: 0 0 20px rgba(255, 51, 51, 0.8);
+}
+
+body.vermelho .dashboard-card {
+  background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+  border: 2px solid #ff3333;
+  box-shadow: 0 8px 32px rgba(255, 51, 51, 0.4);
+}
+
+body.vermelho .dashboard-card:hover {
+  box-shadow: 0 12px 48px rgba(255, 51, 51, 0.6);
+  border-color: #ff6666;
+}
+
+body.vermelho .dashboard-card h3 {
+  color: #ff3333;
+  text-shadow: 0 0 10px rgba(255, 51, 51, 0.6);
 }

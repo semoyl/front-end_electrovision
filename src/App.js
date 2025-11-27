@@ -8,6 +8,17 @@ import './App.css';
 
 function App() {
   const [usuario, setUsuario] = useState(null);
+  const [tema, setTema] = useState('verde');
+
+  useEffect(() => {
+    const temaSalvo = localStorage.getItem('electrovision_tema');
+    if (temaSalvo) setTema(temaSalvo);
+  }, []);
+
+  useEffect(() => {
+    document.body.className = tema;
+    localStorage.setItem('electrovision_tema', tema);
+  }, [tema]);
 
   useEffect(() => {
     try {
@@ -38,6 +49,10 @@ function App() {
   const manipularLogout = () => {
     setUsuario(null);
     localStorage.removeItem('electrovision_usuario');
+  };
+
+  const alternarTema = () => {
+    setTema(tema === 'verde' ? 'vermelho' : 'verde');
   };
 
   return (

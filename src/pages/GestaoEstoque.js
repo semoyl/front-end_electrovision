@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom';
 import ServicoApi from '../services/api';
 
 function GestaoEstoque({ usuario, aoFazerLogout }) {
+  const [tema, setTema] = useState('verde');
+
+  useEffect(() => {
+    const temaSalvo = localStorage.getItem('electrovision_tema') || 'verde';
+    setTema(temaSalvo);
+  }, []);
+
+  const alternarTema = () => {
+    const novoTema = tema === 'verde' ? 'vermelho' : 'verde';
+    setTema(novoTema);
+    document.body.className = novoTema;
+    localStorage.setItem('electrovision_tema', novoTema);
+  };
   const [produtos, setProdutos] = useState([]);
   const [produtoSelecionado, setProdutoSelecionado] = useState('');
   const [tipoMovimentacao, setTipoMovimentacao] = useState('entrada');
@@ -121,6 +134,9 @@ function GestaoEstoque({ usuario, aoFazerLogout }) {
         <h1>Gestão de Estoque</h1>
         <div className="user-info">
           <span>Usuário: {usuario.nome}</span>
+          <button className="btn-tema-header" onClick={alternarTema} title="Alternar tema">
+            {tema === 'verde' ? '👽' : '🩸'}
+          </button>
           <Link to="/dashboard" className="btn btn-secondary">Voltar</Link>
           <button className="btn btn-secondary" onClick={aoFazerLogout}>Logout</button>
         </div>
